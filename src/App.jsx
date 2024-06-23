@@ -6,7 +6,7 @@ function App() {
   return (
     <div>
       <Navbar />
-      <div>
+      <div className="w-[75%] mx-auto mt-8">
         <Outlet></Outlet>
       </div>
     </div>
