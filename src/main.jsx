@@ -4,15 +4,16 @@ import App from "./App.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Video from "./components/Video.jsx";
-import SelectVideo from "./components/SelectVideo.jsx";
+import MyList from "./components/MyList.jsx";
+import Home from "./components/Home.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     children: [
-      { path: "/home", element: <SelectVideo /> },
-      { path: "/my-list", element: <SelectVideo /> },
+      { path: "/", element: <Home /> },
+      { path: "/my-list", element: <MyList /> },
       { path: "/video/:videoId", element: <Video /> },
     ],
   },
